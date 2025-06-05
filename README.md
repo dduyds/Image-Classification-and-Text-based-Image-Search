@@ -9,6 +9,7 @@ This project is an interactive application that leverages a build and custom [CL
 
 ## Demo
 A demo of the application allows users to upload or select an image from CIFAR-10, classify it, and perform text-based image search to find visually similar images based on textual input.
+[![Video Demo](https://img.youtube.com/vi/F9J-cTw5CmA/hqdefault.jpg)](https://youtu.be/F9J-cTw5CmA)
 
 ## Usage
 1. Clone the repository:
