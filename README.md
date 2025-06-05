@@ -19,7 +19,7 @@ A demo of the application allows users to upload or select an image from CIFAR-1
     ```bash
     pip install -r requirements.txt
     ```
-### 1. Run the Python script directly with modes
+### Option 1. Run the Python script directly with modes
 
 The main script supports three modes via the `--mode` argument:
 
@@ -49,7 +49,7 @@ Examples:
   python main.py --mode INFERENCE --idx 5
   ```
 
-### 2. Run the interactive app with Streamlit
+### Option 2. Run the interactive app with Streamlit
 
 Start the Streamlit web interface with:
 
