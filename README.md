@@ -11,3 +11,50 @@ This project is an interactive application that leverages a build and custom [CL
 A demo of the application allows users to upload or select an image from CIFAR-10, classify it, and perform text-based image search to find visually similar images based on textual input.
 
 ## Usage
+1. Clone the repository:
+    ```bash
+    git clone https://github.com/your-username/your-repo-name.git
+    ```
+2. Install dependencies:
+    ```bash
+    pip install -r requirements.txt
+    ```
+### 1. Run the Python script directly with modes
+
+The main script supports three modes via the `--mode` argument:
+
+- `TRAIN`: Train the model.
+- `TEST`: Test the model.
+- `INFERENCE`: Perform inference (default).
+
+When using `INFERENCE`, you can specify the index of the image to predict via the `--idx` argument.
+
+Examples:
+
+- Train the model:
+
+  ```bash
+  python main.py --mode TRAIN
+  ```
+
+- Test the model:
+
+  ```bash
+  python main.py --mode TEST
+  ```
+
+- Inference on image with index 5:
+
+  ```bash
+  python main.py --mode INFERENCE --idx 5
+  ```
+
+### 2. Run the interactive app with Streamlit
+
+Start the Streamlit web interface with:
+
+```bash
+streamlit run Home.py
+```
+
+Open the browser at the URL provided to interact with the application.
