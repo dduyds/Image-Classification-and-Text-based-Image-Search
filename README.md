@@ -2,6 +2,8 @@
 ## Overview
 This project is an interactive application that leverages a build and custom [CLIP](https://github.com/openai/CLIP) (Contrastive Language–Image Pretraining) model to **classify images** from the CIFAR-10 dataset and **retrieve similar images based on text** descriptions. The model is built and customized using PyTorch to work effectively on the [CIFAR-10](https://huggingface.co/datasets/uoft-cs/cifar10) dataset.
 
+![Model Architecture](model/Architecture.jpg)
+
 ## Key Features
 - Custom CLIP model architecture tailored for CIFAR-10 dataset classification and retrieval.
 - Image classification and text-based image retrieval by computing and comparing embeddings.
