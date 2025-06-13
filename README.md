@@ -4,9 +4,9 @@ This project is an interactive application that leverages a build and custom [CL
 
 
 <p align="center">
-  <img src="model/Architecture.png" alt="(Model Architecture)" width="60%">
+  <img src="model/Architecture.png" alt="Model Architecture" width="60%">
 </p>
-<p align="center"><em>Model Architecture</em></p>
+<p align="center"><em>(Model Architecture)</em></p>
 
 
 ## Key Features
@@ -18,7 +18,12 @@ This project is an interactive application that leverages a build and custom [CL
 A demo of the application allows users to upload or select an image from CIFAR-10, classify it, and perform text-based image search to find visually similar images based on textual input.
 - Click the Video below for full demo.
 
-[![Video Demo](https://img.youtube.com/vi/F9J-cTw5CmA/hqdefault.jpg)](https://youtu.be/F9J-cTw5CmA)
+<p align="center">
+  <a href="https://youtu.be/F9J-cTw5CmA" target="_blank">
+    <img src="https://img.youtube.com/vi/F9J-cTw5CmA/hqdefault.jpg" alt="Video Demo" width="60%">
+  </a>
+</p>
+<p align="center"><em>(Video Demo)</em></p>
 
 ## Usage
 1. Clone the repository:
