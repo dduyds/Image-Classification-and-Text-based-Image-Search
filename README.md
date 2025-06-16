@@ -1,5 +1,11 @@
 # Image Classification and Text based Image Search
 ## Overview
+Traditional computer vision systems are typically constrained by a fixed set of predefined categories, limiting their capacity to generalize to new or unseen objects. CLIP (Contrastive Language–Image Pretraining) represents a paradigm shift by enabling open-world object recognition through learning semantic alignments between textual descriptions and visual content.
+
+Unlike conventional classification approaches, CLIP is trained with a contrastive objective to learn a shared embedding space for both image and text modalities. Specifically, the model is optimized to maximize the cosine similarity between matched image-text pairs while minimizing it for mismatched pairs. As illustrated in the contrastive pre-training stage, this is implemented by computing the dot product between image feature vectors \(\{I_1, ..., I_N\}\) and their corresponding text feature vectors \(\{T_1, ..., T_N\}\) within each minibatch.
+
+The objective ensures that the embedding vectors of semantically aligned pairs (\(I_i, T_i\)) are drawn closer together in the feature space, while unrelated pairs are pushed apart. This training methodology allows CLIP to recognize and reason about novel concepts purely from textual descriptions without requiring task-specific fine-tuning. As a result, CLIP marks a significant step toward more generalized and human-like visual understanding in artificial intelligence systems.
+
 This project is an interactive application that leverages a build and custom [CLIP](https://github.com/openai/CLIP) (Contrastive Language–Image Pretraining) model to **classify images** from the CIFAR-10 dataset and **retrieve similar images based on text** descriptions. The model is built and customized using PyTorch to work effectively on the [CIFAR-10](https://huggingface.co/datasets/uoft-cs/cifar10) dataset.
 
 
