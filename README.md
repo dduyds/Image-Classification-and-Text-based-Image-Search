@@ -34,6 +34,7 @@ A demo of the application allows users to upload or select an image from CIFAR-1
 ## Usage
 1. Clone the repository:
     ```bash
+    cd 
     git clone https://github.com/your-username/your-repo-name.git
     ```
 2. Install dependencies:
