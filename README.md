@@ -34,11 +34,13 @@ A demo of the application allows users to upload or select an image from CIFAR-1
 ## Usage
 1. Clone the repository:
     ```bash
-    cd 
-    git clone https://github.com/your-username/your-repo-name.git
+    git clone https://github.com/dduyds/Image-Classification-and-Text-based-Image-Search.git
     ```
 2. Install dependencies:
     ```bash
+    cd model_api
+    pip install -r requirements.txt
+    cd streamlit_ui
     pip install -r requirements.txt
     ```
 ### Option 1. Run the Python script directly with modes
@@ -72,10 +74,14 @@ Examples:
   ```
 
 ### Option 2. Run the interactive app with Streamlit
-
-Start the Streamlit web interface with:
-
+Enable model api
 ```bash
+cd model_api
+uvicorn model_api:app --host 0.0.0.0 --port 8000 --reload
+```
+Start the Streamlit web interface with:
+```bash
+cd streamlit_ui
 streamlit run Home.py
 ```
 
