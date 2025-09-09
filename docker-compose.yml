@@ -1,0 +1,36 @@
+version: "3.8"
+services:
+  clip-api:
+    build: ./model_api
+    container_name: clip-api
+    ports:
+      - "8000:8000"
+    networks:
+      - clip-net
+
+  clip-ui:
+    build: ./streamlit_ui
+    container_name: clip-ui
+    environment:
+      - API_URL=http://clip-api:8000 #clip-api container is service host for api
+    depends_on:
+      - clip-api
+    ports:
+      - "8501:8501"
+    networks:
+      - clip-net
+
+  clip-nginx:
+    build: ./nginx
+    container_name: clip-nginx
+    depends_on:
+      - clip-api
+      - clip-ui
+    ports:
+      - "80:80"
+    networks:
+      - clip-net
+
+networks:
+  clip-net:
+    driver: bridge
