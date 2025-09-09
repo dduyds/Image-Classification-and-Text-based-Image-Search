@@ -10,7 +10,7 @@ This project is an interactive application that leverages a build and custom [CL
 
 
 <p align="center">
-  <img src="model/Architecture.png" alt="Model Architecture" width="60%">
+  <img src="model_api/model/Architecture.png" alt="Model Architecture" width="60%">
 </p>
 <p align="center"><em>(Model Architecture)</em></p>
 
