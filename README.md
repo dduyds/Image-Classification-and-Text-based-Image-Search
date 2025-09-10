@@ -24,7 +24,7 @@ Built a **web application** implementing multi-service architecture for CLIP mod
 * **Streamlit Frontend Application**: Multi-page interactive web interface with real-time visualization and user interaction.  
 * **Nginx Reverse Proxy**: Request routing and unified endpoint management.
 * **Docker Container Orchestration**: Multi-container deployment with service networking and isolation.
-* 
+
 <p align="center">
   <img src="model_api/model/Application_architecture.png" alt="Application architecture" width="60%">
 </p>
