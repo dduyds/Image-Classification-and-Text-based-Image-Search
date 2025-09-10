@@ -1,4 +1,4 @@
-# Image Classification and Text based Image Search
+# Image Classification and Text-Based Image Search
 ## Overview
 ### Framework
 Traditional computer vision systems are typically constrained by a fixed set of predefined categories, limiting their capacity to generalize to new or unseen objects. CLIP (Contrastive Language – Image Pretraining) represents a paradigm shift by enabling open-world object recognition through learning semantic alignments between textual descriptions and visual content.
@@ -7,9 +7,9 @@ Unlike conventional classification approaches, CLIP is trained with a contrastiv
 
 The objective ensures that the embedding vectors of semantically aligned pairs $(I_i, T_i)$ are drawn closer together in the feature space, while unrelated pairs are pushed apart. This training methodology allows CLIP to recognize and reason about novel concepts purely from textual descriptions without requiring task-specific fine-tuning. As a result, CLIP marks a significant step toward more generalized and human-like visual understanding in artificial intelligence systems.
 <p align="center">
-  <img src="model_api/model/Architecture.png" alt="Model Architecture" width="60%">
+  <img src="model_api/model/Architecture.png" alt="Model architecture" width="60%">
 </p>
-<p align="center"><em>(Model Architecture)</em></p>
+<p align="center"><em>(Model architecture)</em></p>
 
 ### Approach
 This project is an interactive application that leverages a build and custom [CLIP](https://github.com/openai/CLIP) (Contrastive Language–Image Pretraining) model to **classify images** from the CIFAR-10 dataset and **retrieve similar images based on text** descriptions. The model is built and customized using PyTorch to work effectively on the [CIFAR-10](https://huggingface.co/datasets/uoft-cs/cifar10) dataset.
@@ -18,11 +18,17 @@ This project is an interactive application that leverages a build and custom [CL
 
 ### System Architecture & Design
 Built a **web application** implementing multi-service architecture for CLIP model deployment. The system demonstrates service separation and container orchestration, showcasing both deep learning engineering and software development capabilities.
-**Core Architecture Components:**
+
+### **Core Architecture Components:**
 * **FastAPI Backend Service**: HTTP API server for managing CLIP model classification and searching.
 * **Streamlit Frontend Application**: Multi-page interactive web interface with real-time visualization and user interaction.  
 * **Nginx Reverse Proxy**: Request routing and unified endpoint management.
 * **Docker Container Orchestration**: Multi-container deployment with service networking and isolation.
+* 
+<p align="center">
+  <img src="model_api/model/Application_architecture.png" alt="Application architecture" width="60%">
+</p>
+<p align="center"><em>(Application architecture)</em></p>
 
 ## Demonstrate
 A demonstrate of the application allows users to upload or select an image from CIFAR-10, classify it, and perform text-based image search to find visually similar images based on textual input.
