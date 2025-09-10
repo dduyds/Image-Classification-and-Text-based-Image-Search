@@ -94,5 +94,10 @@ Start the Streamlit web interface with:
 cd streamlit_ui
 streamlit run Home.py
 ```
-
 Open the browser at the URL provided to interact with the application.
+### Option 3. Run all services with Docker
+Build Docker service
+```bash
+docker-compose up --build -d
+```
+Open the browser with the localhost IP at port 80 to interact with the application.
