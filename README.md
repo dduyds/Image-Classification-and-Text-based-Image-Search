@@ -15,13 +15,18 @@ This project is an interactive application that leverages a build and custom [CL
 <p align="center"><em>(Model Architecture)</em></p>
 
 
-## Key Features
-- Custom CLIP model architecture tailored for CIFAR-10 dataset classification and retrieval.
-- Image classification and text-based image retrieval by computing and comparing embeddings.
-- Clean and user-friendly interface designed with Streamlit for easy and seamless interaction.
+## 🚀 Application Deployment
 
-## Demo
-A demo of the application allows users to upload or select an image from CIFAR-10, classify it, and perform text-based image search to find visually similar images based on textual input.
+### System Architecture & Design
+Built a **web application** implementing multi-service architecture for CLIP model deployment. The system demonstrates service separation and container orchestration, showcasing both deep learning engineering and software development capabilities.
+**Core Architecture Components:**
+* **FastAPI Backend Service**: HTTP API server for managing CLIP model classification and searching.
+* **Streamlit Frontend Application**: Multi-page interactive web interface with real-time visualization and user interaction.  
+* **Nginx Reverse Proxy**: Request routing and unified endpoint management.
+* **Docker Container Orchestration**: Multi-container deployment with service networking and isolation.
+
+## Demonstrate
+A demonstrate of the application allows users to upload or select an image from CIFAR-10, classify it, and perform text-based image search to find visually similar images based on textual input.
 - Click the Video below for full demo.
 
 <p align="center">
