@@ -14,7 +14,7 @@ The objective ensures that the embedding vectors of semantically aligned pairs $
 ### Approach
 This project is an interactive application that leverages a build and custom [CLIP](https://github.com/openai/CLIP) (Contrastive Language–Image Pretraining) model to **classify images** from the CIFAR-10 dataset and **retrieve similar images based on text** descriptions. The model is built and customized using PyTorch to work effectively on the [CIFAR-10](https://huggingface.co/datasets/uoft-cs/cifar10) dataset.
 
-## 🚀 Application Deployment
+## Application Deployment
 
 ### System Architecture & Design
 Built a **web application** implementing multi-service architecture for CLIP model deployment. The system demonstrates service separation and container orchestration, showcasing both deep learning engineering and software development capabilities.
