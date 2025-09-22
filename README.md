@@ -84,7 +84,7 @@ Examples:
   ```
 
 ### Option 2. Run the interactive app with Streamlit
-Enable model api
+Enable model api:
 ```bash
 cd model_api
 uvicorn model_api:app --host 0.0.0.0 --port 8000 --reload
