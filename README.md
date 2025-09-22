@@ -96,7 +96,7 @@ streamlit run Home.py
 ```
 Open the browser at the URL provided to interact with the application.
 ### Option 3. Run all services with Docker
-Build Docker service
+Build Docker service.
 ```bash
 docker-compose up --build -d
 ```
